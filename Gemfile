@@ -8,6 +8,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+
 group :development, :test do
   gem 'byebug'
 end
@@ -16,6 +17,7 @@ group :development do
   gem 'spring'
 end
 gem 'devise'
+gem 'omniauth-facebook'
 gem 'haml-rails'
 gem 'high_voltage'
 gem 'puma'

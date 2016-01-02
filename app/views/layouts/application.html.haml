@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Audissey
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    #top_bar
+      .wrapped
+        .links
+          = link_to 'Login', new_user_session_path()
+        %h1 Audissey
+    #content
+      = yield
+
+    #footer
+      .wrapped
+        .column.span-4
+          %p Audissey
+          %p Copyright 2016 | All Rights Reserved
+        .column.span-2
+          %h4 About
+          %p Team
+          %p Jobs
+          %p History
+        .column.span-2
+          %h4 Connect
+          %p Contact
+          %p Partners
+          %p Investor Relations

@@ -2,4 +2,24 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
+
+  private
+  def atomic_posts
+    if request.method == 'GET'
+      yield
+    else
+      ActiveRecord::Base.transaction do
+        User.where(:id => current_user).lock(true).first
+        yield
+      end
+    end
+  end
+
+  def atomic
+    ActiveRecord::Base.transaction do
+      User.where(:id => current_user).lock(true).first
+      yield
+    end
+  end
+
 end

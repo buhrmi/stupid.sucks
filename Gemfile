@@ -46,3 +46,18 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'devise'
+gem 'haml-rails'
+gem 'high_voltage'
+gem 'puma'
+gem 'sendgrid'
+
+group :development do
+  gem 'better_errors'
+  gem 'html2haml'
+  gem 'quiet_assets'
+  gem 'rails_apps_pages'
+  gem 'rails_layout'
+end
+

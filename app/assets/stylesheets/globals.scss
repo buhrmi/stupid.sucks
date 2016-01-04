@@ -32,23 +32,23 @@ input {
   background: none;
   border: none;
   border-bottom: 2px solid #FF7B1B;
-  color: white;
   &:focus {
       outline:none;
       border-bottom: 2px solid #164269;
   }
 }
 
-button {
+button, input[type="submit"] {
   padding: 6px 12px;
-  border-radius: 5px;
   color: white;
   background: lighten(#164269,20);
+  border: none;
+  cursor: pointer;
   &:hover {
-    background: #164269;
+    background: lighten(#164269,10);
   }
   &:focus {
-    background: #164269;
+    background: lighten(#164269,10);
     outline:none;
   }
 }
@@ -83,16 +83,14 @@ button {
 }
 
 #content {
-  padding-bottom: 150px;
+  padding-bottom: 250px;
 }
 
 #footer {
-  padding-top: 30px;
+  padding-top: 40px;
   background: white;
-  height: 150px;
-  border-top: 1px solid #888;
-  box-shadow: 0 10px 10px -10px black inset;
-  position: relative;
+  height: 250px;
+  box-shadow: 0 10px 20px -10px black inset;
   position: absolute;
   width: 100%;
   bottom: 0;

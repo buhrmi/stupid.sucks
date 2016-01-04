@@ -10,9 +10,14 @@
   text-align: center;
 }
 .section.statistics {
-  background-color: #F36C0B;
+  background-color: #005AAB; //#F36C0B;
   color: white;
   padding: 50px 0;
+  text-align: center;
+  h2 {
+    font-weight: lighter;
+    margin-bottom: 20px;
+  }
   .block {
     display: inline-block;
     width: 32%;
@@ -23,6 +28,17 @@
 .section.initial_signup {
   h2 {
     font-size: 30px;
+  }
+  input {  color: white; }
+  .name {
+    input { width: 245px; }
+  }
+  .offering {
+    input { width: 265px; }
+    padding-bottom: 16px;
+  }
+  button {
+    width: 100%;
   }
   text-align: center;
   padding: 50px 0;
@@ -35,5 +51,67 @@
     text-align: left;
     background-color: #F36C0B;
     margin-top: 20px;
+  }
+}
+.section.sign_up {
+  text-align: center;
+  .wrapped {
+    position: relative;
+  }
+
+  .divider {
+    position: absolute;
+    width: 0px;
+    height: 200px;
+    top: 50px;
+    left: 50%;
+    border-left: 1px solid #CCC;
+    span {
+      position: absolute;
+      left: -10px;
+      top: 80px;
+      background: white;
+    }
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .left_side, .right_side {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    form {
+      padding-top: 60px;
+    }
+    label {
+      font-size: 15px;
+      width: 160px;
+      text-align: right;
+      display: inline-block;
+    }
+    input[type="submit"] {
+      margin-top: 10px;
+    }
+  }
+  .right_side {
+    padding-top: 120px;
+  }
+  .provider {
+    width: 250px;
+    display: inline-block;
+    color: white;
+    i {
+      padding: 12px 5px;
+      padding-left: 16px;
+      display: inline-block;
+    }
+    span {
+      padding: 12px 5px;
+      padding-right: 16px;
+      display: inline-block;
+    }
+    &.facebook {
+      background: #3b5998;
+    }
   }
 }

@@ -4,13 +4,17 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Audissey
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
     #top_bar
       .wrapped
         .links
-          = link_to 'Login', new_user_session_path()
+          - if current_user
+            = link_to 'Logout', destroy_user_session_path(), :method=>'delete'
+          - else
+            = link_to 'Login', new_user_session_path()
         %h1 Audissey
     #content
       = yield
@@ -18,15 +22,17 @@
     #footer
       .wrapped
         .column.span-4
-          %p Audissey
-          %p Copyright 2016 | All Rights Reserved
+          %p © Audissey, All Rights Reserved
+          %p Privacy Policy | Terms
         .column.span-2
-          %h4 About
+          %h4 Company
+          %p About
+          %p Contact
           %p Team
           %p Jobs
-          %p History
-        .column.span-2
-          %h4 Connect
-          %p Contact
+        .column.span-4
+          %h4 Resources
+          %p Become a teacher
           %p Partners
-          %p Investor Relations
+          %p Investors
+          %p Press Kit

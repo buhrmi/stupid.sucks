@@ -1,21 +1,22 @@
 .section.welcome
   .wrapped
-    %h2 Learn from industry veterans
-    %p Get live video lessons from awesome teachers
+    %h2 Take it to the next level
+    %p Live video lessons from awesome teachers
     %p [See how it works]
     %p [100% money back guarantee]
 .section.categories
   .wrapped
     %h2 What do you want to learn
-    [Music Production] [DJing] [Programming] [Business Skills] [Beauty & Fashion]
+    %p [Music Production] [DJing] [Programming] [Business] [Fashion & Beauty]
+    %p Browse all categories
 
 
 .section.initial_signup
   .wrapped
     %h2 Join the community as teacher!
-    %p The easiest way to provide video lessons to your students.
+    %p The easiest way to schedule sessions with your students.
     .block
-      .part1
+      %form{:action => new_user_registration_path}
         .hi
           Hi,
         .name
@@ -24,18 +25,19 @@
         .offering
           and I am
           %input(name="offering" placeholder="teaching music production")
-        %button Sign Up
+        %button Sign up as teacher
 .section.statistics
   .wrapped
+    %h2 We connect those who are eager to learn with those who are eager to teach.
     .block
       %p
         %strong= User.count
-      %p Teachers
+      %p Members
     .block
       %p
         %strong= User.count
-      %p Sessions to date
+      %p Sessions held
     .block
       %p
         %strong $#{User.count}
-      %p Payouts to date
+      %p Earned

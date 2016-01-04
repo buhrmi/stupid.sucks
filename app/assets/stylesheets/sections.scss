@@ -1,3 +1,39 @@
 .section.welcome {
-  
+  h2 {
+    font-size: 40px;
+  }
+  padding-top: 40px;
+  text-align: center;
+}
+.section.categories {
+  padding: 50px 0;
+  text-align: center;
+}
+.section.statistics {
+  background-color: #F36C0B;
+  color: white;
+  padding: 50px 0;
+  .block {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    padding: 0 30px;
+  }
+}
+.section.initial_signup {
+  h2 {
+    font-size: 30px;
+  }
+  text-align: center;
+  padding: 50px 0;
+  background-color: #FF7B1B;
+  color: white;
+  .block {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    text-align: left;
+    background-color: #F36C0B;
+    margin-top: 20px;
+  }
 }

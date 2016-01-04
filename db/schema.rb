@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160102045153) do
+ActiveRecord::Schema.define(version: 20160104012547) do
+
+  create_table "offerings", force: :cascade do |t|
+    t.string   "actionable_name"
+    t.text     "description"
+    t.integer  "user_id"
+    t.string   "image_uid"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "prices", force: :cascade do |t|
+    t.integer  "amount"
+    t.string   "currency"
+    t.integer  "purchasable_id"
+    t.string   "purchasable_type"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

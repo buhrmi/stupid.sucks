@@ -1,10 +1,41 @@
 .section.welcome
   .wrapped
-    %h2 Welcome
-    %p Start your Audissey
-    %p Learn the skills you want
-    %p Teach what you know
-    %p
-      %strong Stats:
-    %p
-    #{User.count} registered | 0 USD earned | 0 sessions held
+    %h2 Learn from industry veterans
+    %p Get live video lessons from awesome teachers
+    %p [See how it works]
+    %p [100% money back guarantee]
+.section.categories
+  .wrapped
+    %h2 What do you want to learn
+    [Music Production] [DJing] [Programming] [Business Skills] [Beauty & Fashion]
+
+
+.section.initial_signup
+  .wrapped
+    %h2 Join the community as teacher!
+    %p The easiest way to provide video lessons to your students.
+    .block
+      .part1
+        .hi
+          Hi,
+        .name
+          my name is
+          %input(name="name" placeholder="deadmau5")
+        .offering
+          and I am
+          %input(name="offering" placeholder="teaching music production")
+        %button Sign Up
+.section.statistics
+  .wrapped
+    .block
+      %p
+        %strong= User.count
+      %p Teachers
+    .block
+      %p
+        %strong= User.count
+      %p Sessions to date
+    .block
+      %p
+        %strong $#{User.count}
+      %p Payouts to date

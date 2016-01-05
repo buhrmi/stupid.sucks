@@ -1,7 +1,7 @@
-Audissey
+stupid.sucks!!!
 ================
 
-This is the code that powers the audissey.fm website. Feel free to add any features you want via a pull request.
+This is the code that powers the stupid.sucks website. Feel free to add any features you want via a pull request. If you notice something stupid, well, good for you.
 
 Ruby on Rails
 -------------
@@ -27,10 +27,6 @@ Contributing
 
 Credits
 -------
-
-Design Lead: Gee Daigo Kawai
-Technical Lead: Stefan Buhrmester
-
 
 License
 -------

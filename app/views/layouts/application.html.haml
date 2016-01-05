@@ -2,7 +2,7 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Audissey
+    %title stupid.sucks!
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
@@ -12,17 +12,18 @@
       .wrapped
         .links
           - if current_user
-            = link_to 'Logout', destroy_user_session_path(), :method=>'delete'
+            = link_to 'Logout', destroy_user_session_path, :method=>'delete'
           - else
-            = link_to 'Login', new_user_session_path()
-        %h1 Audissey
+            = link_to 'Login', new_user_session_path
+        %h1 stupid.sucks!
     #content
       = yield
 
     #footer
       .wrapped
         .column.span-4
-          %p © Audissey, All Rights Reserved
+          %p © stupid.sucks
+          %p All Rights Reserved
           %p Privacy Policy | Terms
         .column.span-2
           %h4 Company

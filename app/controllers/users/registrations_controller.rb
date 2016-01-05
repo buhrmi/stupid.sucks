@@ -12,9 +12,14 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # POST /resource
   def create
     super
-    resource.name = cookies[:name]
-    resource.offerings.create(:actionable_name => cookies[:offering]) if resource.persisted?
-    resource.save
+
+    if resource.persisted?
+      resource.name = cookies[:name]
+      if cookies[:offering]
+        resource.offerings.create(:actionable_name => cookies[:offering])
+      end
+      resource.save
+    end
   end
 
   # GET /resource/edit

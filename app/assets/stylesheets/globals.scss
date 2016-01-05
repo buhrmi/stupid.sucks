@@ -27,15 +27,39 @@ a {
   text-decoration: none;
 }
 
-input {
-  padding: 2px 4px;
-  background: none;
+form .error {
+  padding: 0px 4px;
+  background: white;
   border: none;
-  border-bottom: 2px solid #FF7B1B;
+  width: 100%;
+  font-size: 14px;
+  color: red;
+}
+
+label {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  color: black;
+  font-size: 14px;
+  padding: 10px 4px 0px 4px;
+}
+
+input {
+  padding: 0px 4px;
+  background: white;
+  border: none;
+  width: 100%;
+  border: 1px solid #DDD;
+  border-left: 2px solid #FF7B1B;
   &:focus {
       outline:none;
-      border-bottom: 2px solid #164269;
+      border-left: 2px solid #164269;
   }
+}
+.field_with_errors input {
+  border: 1px solid #FCC;
+  border-left: 2px solid #FF7B1B;
 }
 
 button, input[type="submit"] {
@@ -83,7 +107,7 @@ button, input[type="submit"] {
 }
 
 #content {
-  padding-bottom: 250px;
+  padding-bottom: 350px;
 }
 
 #footer {

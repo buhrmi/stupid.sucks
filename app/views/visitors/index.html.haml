@@ -1,20 +1,22 @@
 .section.welcome
   .wrapped
-    %h2 Take it to the next level
-    %p Live video lessons from awesome teachers
+    %h2 Learn directly from the experts
+    %p Live video sessions with awesome teachers
     %p [See how it works]
     %p [100% money back guarantee]
 .section.categories
   .wrapped
-    %h2 What do you want to learn
-    %p [Music Production] [DJing] [Programming] [Business] [Fashion & Beauty]
-    %p Browse all categories
+    %h2 You have the dream. We help you make it a reality.
+    %p
+      - Category.all.each do |cat|
+        = link_to cat.name, cat
+    %p= link_to 'Browse all categories', categories_path
 
 
 .section.initial_signup
   .wrapped
     %h2 Join the community as teacher!
-    %p The easiest way to schedule sessions with your students.
+    %p Discover the easiest way to schedule sessions with your students.
     .block
       %form{:action => new_user_registration_path}
         .hi

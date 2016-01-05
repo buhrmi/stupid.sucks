@@ -65,8 +65,16 @@ input {
   border: 1px solid #FCC;
   border-left: 2px solid #FF7B1B;
 }
-
-button, input[type="submit"] {
+.inline_fields {
+  input {
+    display: inline;
+    width: initial;
+  }
+}
+.actions {
+  margin-top: 20px;
+}
+a.add_fields, button, input[type="submit"] {
   padding: 6px 12px;
   color: white;
   background: lighten(#164269,20);
@@ -79,6 +87,9 @@ button, input[type="submit"] {
     background: lighten(#164269,10);
     outline:none;
   }
+}
+a.add_fields {
+  margin-top: 20px;
 }
 
 

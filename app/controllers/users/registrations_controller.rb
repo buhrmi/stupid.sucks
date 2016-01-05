@@ -6,6 +6,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def new
     cookies[:name] = params[:name] if params[:name].present?
     cookies[:offering] = params[:offering] if params[:offering].present?
+    cookies[:category] = params[:category] if params[:category].present?
     super
   end
 
@@ -16,7 +17,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     if resource.persisted?
       resource.name = cookies[:name]
       if cookies[:offering]
-        resource.offerings.create(:actionable_name => cookies[:offering])
+        resource.offerings.create(:actionable_name => cookies[:offering], :category_id => cookies[:category])
       end
       resource.save
     end

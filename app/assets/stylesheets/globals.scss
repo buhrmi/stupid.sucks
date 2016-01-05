@@ -15,6 +15,10 @@ body {
 a {
   color: #08B5E5;
 }
+a:hover {
+  background: #08B5E5;
+  color: white;
+}
 
 * {
   font-size: 18px;

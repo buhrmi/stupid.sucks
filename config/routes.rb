@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
+  resources :offerings
+  resource :dashboard do
+
+  end
   resources :categories
   root to: 'visitors#index'
   devise_for :users, :controllers => { :registrations => 'users/registrations' }
-  resources :users
+  resources :offerings
+
 end

@@ -12,5 +12,7 @@
 #
 
 class Offering < ActiveRecord::Base
-
+  include Buyable
+  
+  belongs_to :user
 end

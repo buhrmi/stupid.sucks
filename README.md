@@ -28,9 +28,9 @@ Contributing
 Credits
 -------
 
-Project Inception: Gee Daigo Kawai
+Design Lead: Gee Daigo Kawai
 Technical Lead: Stefan Buhrmester
-Design Lead: Nic Padula
+
 
 License
 -------

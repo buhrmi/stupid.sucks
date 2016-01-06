@@ -121,6 +121,7 @@ GEM
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
     orm_adapter (0.5.0)
+    pg (0.18.4)
     puma (2.15.3)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
@@ -208,6 +209,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   omniauth-facebook
+  pg
   puma
   quiet_assets
   rails (= 4.2.5)

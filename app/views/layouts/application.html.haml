@@ -2,6 +2,11 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:property=>"og:url", :content=>"http://stupid.sucks"}
+    %meta{property=>"og:type", :content=>"website"}
+    %meta{property=>"og:title", :content=>"stupid.sucks | e-learning"}
+    %meta{property=>"og:description", :content=>"The new e-learning platform. Because stupidity sucks."}
+    %meta{property=>"og:image", :content=>"http://stupid.sucks/logo.png"}
     %title stupid.sucks!
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'

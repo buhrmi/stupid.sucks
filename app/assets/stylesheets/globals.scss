@@ -91,7 +91,12 @@ a.add_fields, button, input[type="submit"] {
 a.add_fields {
   margin-top: 20px;
 }
-
+.notice {
+  background-color: #F3F08B;
+  padding: 5px 8px;
+  border-top: 1px solid #CCCA89;
+  border-bottom: 1px solid #CCCA89;
+}
 
 .hidden {
   display: none;

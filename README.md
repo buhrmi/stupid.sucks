@@ -1,7 +1,7 @@
 stupid.sucks!!!
 ================
 
-This is the code that powers the stupid.sucks website. Feel free to add any features you want via a pull request. If you notice something stupid, well, good for you.
+This is the code that powers the stupid.sucks website. Feel free to add any features you want via a pull request. If you notice something stupid, well, fix it!
 
 Ruby on Rails
 -------------

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   end
   resources :categories
-  root to: 'visitors#index'
+  root to: 'visitors#landing'
   devise_for :users, :controllers => { :registrations => 'users/registrations' }
   resources :offerings
 

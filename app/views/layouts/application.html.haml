@@ -15,8 +15,13 @@
             = link_to 'Logout', destroy_user_session_path, :method=>'delete'
           - else
             = link_to 'Login', new_user_session_path
-        %h1 stupid.sucks!
+        %h1
+          = image_tag 'logo.png', :height => '22'
+          stupid.sucks!
     #content
+      - if flash[:notice]
+        .wrapped
+          .notice= flash[:notice]
       = yield
 
     #footer
@@ -25,7 +30,7 @@
           %p © stupid.sucks
           %p All Rights Reserved
           %p Privacy Policy | Terms
-        .column.span-2
+        .column.span-4
           %h4 Company
           %p About
           %p Contact

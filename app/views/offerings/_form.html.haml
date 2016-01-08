@@ -8,6 +8,8 @@
   %h1.inline_fields
     #{current_user.display_name} is
     = f.text_field :actionable_name
+  %h2 Description
+  = f.text_area :description, :class => 'redactor'
   %h2 Pricing
   .pricing
     - if @offering.prices.any?

@@ -28,6 +28,7 @@ class User < ActiveRecord::Base
          :omniauth_providers => [:facebook], :password_length => 4..127
 
   has_many :offerings
+  has_many :uploads
 
   def display_name
     name || email_address

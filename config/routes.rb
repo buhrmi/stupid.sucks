@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resource :dashboard do
 
   end
+  resources :uploads
   resources :categories
   root to: 'visitors#landing'
   devise_for :users, :controllers => { :registrations => 'users/registrations' }

@@ -13,4 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require redactor/redactor
+//= require redactor/ja
+//= require redactor/de
+//= require redactor/video
+//= require redactor/imagemanager
+//= require redactor/filemanager
 //= require_tree .

@@ -1,12 +1,13 @@
 .section.welcome
   .wrapped
-    %h2 Learn directly from the experts
-    %p Don't be stupid. Get live video & chat sessions with awesome teachers.
+    %h2 Get help directly from the experts
+    %p Don't be stupid. Get live video & chat with awesome teachers & mentors.
     %p [See how it works]
     %p [100% money back guarantee]
 .section.categories
   .wrapped
-    %h2 You have the dream. We help you make it a reality.
+    %h2 Have a dream? We help you make it a reality!
+    %h2 Have a problem? We help you fix it!
     %p
       - Category.all.each do |cat|
         = link_to cat.name, cat
@@ -15,8 +16,8 @@
 
 .section.initial_signup
   .wrapped
-    %h2 Join the community as teacher!
-    %p Discover the easiest way to schedule sessions with your students.
+    %h2 Join the community as mentor!
+    %p Discover the easiest way to schedule sessions with students and clients.
     .block
       %form{:action => new_user_registration_path}
         .hi

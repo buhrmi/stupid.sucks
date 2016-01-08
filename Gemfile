@@ -8,6 +8,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'dragonfly'
+gem 'dragonfly-s3_data_store'
 gem 'pg', group: :production
 
 group :development, :test do

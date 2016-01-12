@@ -16,7 +16,11 @@
     #top_bar
       .wrapped
         .links
+          = link_to 'Browse Categories', categories_path
+          |
           - if current_user
+            = link_to 'Dashboard', dashboard_path
+            |
             = link_to 'Logout', destroy_user_session_path, :method=>'delete'
           - else
             = link_to 'Login', new_user_session_path

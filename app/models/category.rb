@@ -7,4 +7,6 @@ class Category < ActiveRecord::Base
   find_or_create_by :id => 'business', :name => 'Business'
   find_or_create_by :id => 'fashion_beauty', :name => 'Fashion & Beauty'
   find_or_create_by :id => 'lifestyle', :name => 'Lifestyle'
+
+  has_many :offerings
 end

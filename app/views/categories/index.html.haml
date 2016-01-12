@@ -1,25 +1,6 @@
-%h1 Listing categories
-
-%table
-  %thead
-    %tr
-      %th Name
-      %th Id
-      %th Description
-      %th
-      %th
-      %th
-
-  %tbody
+.section.categories_index
+  .wrapped
     - @categories.each do |category|
-      %tr
-        %td= category.name
-        %td= category.id
-        %td= category.description
-        %td= link_to 'Show', category
-        %td= link_to 'Edit', edit_category_path(category)
-        %td= link_to 'Destroy', category, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Category', new_category_path
+      %div[category]><
+        = link_to category do
+          .name><= category.name
